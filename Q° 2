@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void triangulo_floyd(int n) {
+    int numero = 1;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", numero);
+            numero++;
+        }
+        printf("\n");  // Pula para a próxima linha
+    }
+}
+
+int main() {
+    int n;
+    
+    // Lê o número inteiro positivo N
+    printf("Digite um número inteiro positivo: ");
+    scanf("%d", &n);
+    
+    // Verifica se o número é positivo
+    if (n > 0) {
+        triangulo_floyd(n);
+    } else {
+        printf("Por favor, digite um número positivo.\n");
+    }
+
+    return 0;
+}

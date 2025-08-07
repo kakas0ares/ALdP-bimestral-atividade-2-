@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    float velocidade;
+    
+    // Pergunta ao usuário qual é a velocidade em que ele costuma dirigir
+    printf("Qual a sua velocidade usual ao dirigir? (km/h): ");
+    scanf("%f", &velocidade);
+    
+    // Verifica a resposta do guarda de trânsito com base nas velocidades
+    if (velocidade > 75) {
+        printf("Você está acima do limite permitido! Multa alta.\n");
+    } else {
+        if (velocidade > 65) {
+            printf("Você está acima da velocidade, mas ainda dentro da margem de tolerância. Multa média.\n");
+        } else {
+            if (velocidade > 55) {
+                printf("Você está dentro do limite de velocidade, mas é bom ficar atento. Multa leve.\n");
+            } else {
+                if (velocidade > 45) {
+                    printf("Você está dirigindo a uma velocidade segura. Sem multa.\n");
+                } else {
+                    printf("Você está muito abaixo do limite, mas está seguro. Sem multa.\n");
+                }
+            }
+        }
+    }
+
+    return 0;
+}

@@ -14,11 +14,9 @@ void triangulo_floyd(int n) {
 int main() {
     int n;
     
-    // Lê o número inteiro positivo N
     printf("Digite um número inteiro positivo: ");
     scanf("%d", &n);
     
-    // Verifica se o número é positivo
     if (n > 0) {
         triangulo_floyd(n);
     } else {

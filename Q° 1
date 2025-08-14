@@ -3,11 +3,9 @@
 int main() {
     int quantidade, numero, maior_numero, contador_maior = 0;
 
-    // Solicitar a quantidade de números a serem lidos
     printf("Digite a quantidade de números a serem lidos: ");
     scanf("%d", &quantidade);
 
-    // Ler os números e processá-los
     printf("Digite os números:\n");
     for (int i = 0; i < quantidade; i++) {
         scanf("%d", &numero);
@@ -20,7 +18,6 @@ int main() {
         }
     }
 
-    // Exibir o maior número e a quantidade de vezes que ele foi lido
     printf("O maior número é %d e ele foi lido %d vezes.\n", maior_numero, contador_maior);
 
     return 0;
